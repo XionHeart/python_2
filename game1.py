@@ -7,7 +7,7 @@ def palabra_random():
     with open("./game/data.txt", "r", encoding="utf-8") as f:
         for palabra in f:
             palabras.append(palabra)
-    palabra_random = random.choice(palabras)
+    palabra_random = palabras[1]
     palabra_random = palabra_random.upper()
     palabra_random = palabra_random.strip()
     return palabra_random
